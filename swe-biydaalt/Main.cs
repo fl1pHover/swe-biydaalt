@@ -84,5 +84,13 @@ namespace swe_biydaalt
         {
             Close();
         }
+
+        private void kryptonButton4_Click(object sender, EventArgs e)
+        {
+            UserControl1 ur = new UserControl1();
+            ur.Dock = DockStyle.Fill;
+            uc_panel.Controls.Clear();
+            uc_panel.Controls.Add(ur);
+        }
     }
 }

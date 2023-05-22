@@ -18,41 +18,43 @@ namespace swe_biydaalt
     {
         int feedback_id = 0;
         int user_id = 0;
-        public static int ret_feedback_id = 0;
-        public static int ret_user_id = 0;
+       // public static int ret_feedback_id = 0;
+        public static int ret_user_id;
 
         public frm_form()
         {
             InitializeComponent();
 
         }
-        public frm_form(int _f_id)
+        public frm_form(int _u_id)
         {
             InitializeComponent();
-            feedback_id = _f_id;
-           // user_id = _u_id;
+         //   feedback_id = _f_id;
+            user_id = _u_id;
         }
      
 
 
-        public static int get_data(int p_id)
-        {
-            frm_form frm = new frm_form(p_id);
-            frm.ShowDialog();
-            return ret_feedback_id;
-        }
+       // public static int get_data(int p_id)
+       // {
+          //  frm_form frm = new frm_form(p_id);
+         //   frm.ShowDialog();
+         //   return ret_feedback_id;
+      //  }
 
         public static int get_user(int u_id)
         {
-        
+            frm_form frm = new frm_form(u_id);
+            frm.ShowDialog();
             return ret_user_id;
+        
         }
 
 
 
         private void frm_form_Load(object sender, EventArgs e)
         {
-            //label3.Text = ret_user_id.ToString();
+            label3.Text = user_id.ToString();
             SqlConnection con = new SqlConnection(Globals.database);
             con.Open();
             SqlCommand com = new SqlCommand("get_feedback", con);
@@ -62,6 +64,16 @@ namespace swe_biydaalt
             adap.Fill(ds);
             //  ds.Tables[0].TableName = "Category";
 
+
+
+            SqlCommand com1 = new SqlCommand("SELECT * FROM Users WHERE UserID = " + user_id + "", con);
+            SqlDataAdapter adap1 = new SqlDataAdapter(com1);
+            DataSet ds1 = new DataSet();
+            adap1.Fill(ds1);
+            if (ds1 == null || ds1.Tables[0].Rows.Count == 0)
+            {
+                return;
+            }
 
             kryptonComboBox1.DataSource = ds.Tables[1];
             kryptonComboBox1.ValueMember = "FbTypeID";
@@ -75,11 +87,11 @@ namespace swe_biydaalt
             {
                 return;
             }
-            lbl_firstName.Text = ds.Tables[3].Rows[0]["FirstName"].ToString();
-            lbl_lastName.Text = ds.Tables[3].Rows[0]["LastName"].ToString();
-            lbl_phone.Text = ds.Tables[3].Rows[0]["Phone"].ToString();
-            lbl_email.Text = ds.Tables[3].Rows[0]["Email"].ToString();
-            label3.Text = ds.Tables[3].Rows[0]["UserID"].ToString();
+            lbl_firstName.Text = ds1.Tables[0].Rows[0]["FirstName"].ToString();
+            lbl_lastName.Text = ds1.Tables[0].Rows[0]["LastName"].ToString();
+            lbl_phone.Text = ds1.Tables[0].Rows[0]["Phone"].ToString();
+            lbl_email.Text = ds1.Tables[0].Rows[0]["Email"].ToString();
+            label3.Text = ds1.Tables[0].Rows[0]["UserID"].ToString();
         }
 
  
@@ -123,7 +135,8 @@ namespace swe_biydaalt
                     }
                     else
                     {
-                        ret_feedback_id = Convert.ToInt32(ds.Tables[0].Rows[0]["feedback_id"]);
+                       // ret_feedback_id = Convert.ToInt32(ds.Tables[0].Rows[0]["feedback_id"]);
+                        feedback_id = Convert.ToInt32(ds.Tables[0].Rows[0]["feedback_id"]);
                         MessageBox.Show("Амжилттай хадгалагдлаа");
                         Close();
                     }

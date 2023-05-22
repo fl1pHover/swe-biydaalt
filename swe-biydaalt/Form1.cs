@@ -31,7 +31,7 @@ namespace swe_biydaalt
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+            
             get_data();
 
             uc_form us = new uc_form(user_id);
@@ -55,7 +55,8 @@ namespace swe_biydaalt
         {
             SqlConnection con = new SqlConnection(Globals.database);
             con.Open();
-            string query = "select a.*, b.Username, c.Title from Feedbacks a inner join Users b on a.UserID = b.UserID inner join FeedbackTitle c on a.TitleID = c.TitleID where FbTypeID = '3'";
+            string query = "select a.*, b.Username, c.Title from Feedbacks a inner join Users b " +
+                "on a.UserID = b.UserID inner join FeedbackTitle c on a.TitleID = c.TitleID where FbTypeID = '3'";
             SqlDataAdapter adap = new SqlDataAdapter(query, con);
             DataSet ds = new DataSet();
             adap.Fill(ds);
@@ -79,6 +80,25 @@ namespace swe_biydaalt
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            uc_settings us = new uc_settings(user_id);
+            us.Dock = DockStyle.Fill;
+            settings_panel.Controls.Clear();
+            settings_panel.Controls.Add(us);
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+   
+            uc_form us = new uc_form(user_id);
+            us.Dock = DockStyle.Fill;
+            settings_panel.Controls.Clear();
+            settings_panel.Controls.Add(us);
+        }
+
+      
+
+        private void kryptonButton2_Click_1(object sender, EventArgs e)
         {
             uc_settings us = new uc_settings(user_id);
             us.Dock = DockStyle.Fill;

@@ -35,31 +35,32 @@
             this.label1 = new System.Windows.Forms.Label();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.lblRed = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txt_username = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_email = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.txt_lastName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_firstName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.lbl_error = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_password = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txt_firstName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txt_lastName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txt_email = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.txt_username = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -162,7 +163,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonButton1.StateTracking.Border.Rounding = 10;
             this.kryptonButton1.TabIndex = 5;
-            this.kryptonButton1.Values.Text = "Нэвтрэх";
+            this.kryptonButton1.Values.Text = "Бүртгүүлэх";
             this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // lblRed
@@ -175,17 +176,6 @@
             this.lblRed.Size = new System.Drawing.Size(19, 15);
             this.lblRed.TabIndex = 7;
             this.lblRed.Text = "    ";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(859, 529);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -256,6 +246,130 @@
             this.kryptonPanel1.TabIndex = 10;
             this.kryptonPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.kryptonPanel1_Paint);
             // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.DimGray;
+            this.label11.Location = new System.Drawing.Point(78, 57);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(299, 50);
+            this.label11.TabIndex = 25;
+            this.label11.Text = "Бүртгүүлсний дараа утасны дугаар болон нууц үгээр нэвтрэхийг анхаарна уу!";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txt_username
+            // 
+            this.txt_username.Location = new System.Drawing.Point(23, 224);
+            this.txt_username.Name = "txt_username";
+            this.txt_username.Size = new System.Drawing.Size(183, 35);
+            this.txt_username.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txt_username.StateCommon.Border.Color1 = System.Drawing.SystemColors.InactiveCaption;
+            this.txt_username.StateCommon.Border.Color2 = System.Drawing.SystemColors.ActiveCaption;
+            this.txt_username.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txt_username.StateCommon.Border.Rounding = 10;
+            this.txt_username.StateCommon.Border.Width = 1;
+            this.txt_username.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_username.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 2);
+            this.txt_username.TabIndex = 24;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(19, 198);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(101, 23);
+            this.label10.TabIndex = 23;
+            this.label10.Text = "Харагдах нэр";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(227, 198);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(57, 23);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "Имэйл";
+            // 
+            // txt_email
+            // 
+            this.txt_email.Location = new System.Drawing.Point(230, 224);
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(183, 35);
+            this.txt_email.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txt_email.StateCommon.Border.Color1 = System.Drawing.SystemColors.InactiveCaption;
+            this.txt_email.StateCommon.Border.Color2 = System.Drawing.SystemColors.ActiveCaption;
+            this.txt_email.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txt_email.StateCommon.Border.Rounding = 10;
+            this.txt_email.StateCommon.Border.Width = 1;
+            this.txt_email.StateCommon.Content.Color1 = System.Drawing.SystemColors.InfoText;
+            this.txt_email.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_email.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 2);
+            this.txt_email.TabIndex = 21;
+            // 
+            // txt_lastName
+            // 
+            this.txt_lastName.Location = new System.Drawing.Point(230, 148);
+            this.txt_lastName.Name = "txt_lastName";
+            this.txt_lastName.Size = new System.Drawing.Size(183, 35);
+            this.txt_lastName.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txt_lastName.StateCommon.Border.Color1 = System.Drawing.SystemColors.InactiveCaption;
+            this.txt_lastName.StateCommon.Border.Color2 = System.Drawing.SystemColors.ActiveCaption;
+            this.txt_lastName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txt_lastName.StateCommon.Border.Rounding = 10;
+            this.txt_lastName.StateCommon.Border.Width = 1;
+            this.txt_lastName.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_lastName.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 2);
+            this.txt_lastName.TabIndex = 20;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(226, 122);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(45, 23);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Овог";
+            // 
+            // txt_firstName
+            // 
+            this.txt_firstName.Location = new System.Drawing.Point(23, 148);
+            this.txt_firstName.Name = "txt_firstName";
+            this.txt_firstName.Size = new System.Drawing.Size(183, 35);
+            this.txt_firstName.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txt_firstName.StateCommon.Border.Color1 = System.Drawing.SystemColors.InactiveCaption;
+            this.txt_firstName.StateCommon.Border.Color2 = System.Drawing.SystemColors.ActiveCaption;
+            this.txt_firstName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txt_firstName.StateCommon.Border.Rounding = 10;
+            this.txt_firstName.StateCommon.Border.Width = 1;
+            this.txt_firstName.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_firstName.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 2);
+            this.txt_firstName.TabIndex = 18;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(19, 122);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(37, 23);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Нэр";
+            // 
             // lbl_error
             // 
             this.lbl_error.AutoSize = true;
@@ -266,26 +380,6 @@
             this.lbl_error.Size = new System.Drawing.Size(271, 22);
             this.lbl_error.TabIndex = 14;
             this.lbl_error.Text = "Нэвтрэх нэр эсвэл нууц үг буруу байна";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(380, 312);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 13;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(172, 308);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(29, 30);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
             // 
             // label6
             // 
@@ -328,129 +422,45 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "Сайн байна уу?";
             // 
-            // txt_firstName
+            // pictureBox3
             // 
-            this.txt_firstName.Location = new System.Drawing.Point(23, 148);
-            this.txt_firstName.Name = "txt_firstName";
-            this.txt_firstName.Size = new System.Drawing.Size(183, 35);
-            this.txt_firstName.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.txt_firstName.StateCommon.Border.Color1 = System.Drawing.SystemColors.InactiveCaption;
-            this.txt_firstName.StateCommon.Border.Color2 = System.Drawing.SystemColors.ActiveCaption;
-            this.txt_firstName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txt_firstName.StateCommon.Border.Rounding = 10;
-            this.txt_firstName.StateCommon.Border.Width = 1;
-            this.txt_firstName.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_firstName.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 2);
-            this.txt_firstName.TabIndex = 18;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(380, 312);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 13;
+            this.pictureBox3.TabStop = false;
             // 
-            // label5
+            // pictureBox2
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(19, 122);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(37, 23);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Нэр";
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(172, 308);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(29, 30);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
             // 
-            // txt_lastName
+            // pictureBox1
             // 
-            this.txt_lastName.Location = new System.Drawing.Point(230, 148);
-            this.txt_lastName.Name = "txt_lastName";
-            this.txt_lastName.Size = new System.Drawing.Size(183, 35);
-            this.txt_lastName.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.txt_lastName.StateCommon.Border.Color1 = System.Drawing.SystemColors.InactiveCaption;
-            this.txt_lastName.StateCommon.Border.Color2 = System.Drawing.SystemColors.ActiveCaption;
-            this.txt_lastName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txt_lastName.StateCommon.Border.Rounding = 10;
-            this.txt_lastName.StateCommon.Border.Width = 1;
-            this.txt_lastName.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_lastName.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 2);
-            this.txt_lastName.TabIndex = 20;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(859, 529);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
-            // label8
+            // label12
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(226, 122);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(45, 23);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "Овог";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(227, 198);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(57, 23);
-            this.label9.TabIndex = 22;
-            this.label9.Text = "Имэйл";
-            // 
-            // txt_email
-            // 
-            this.txt_email.Location = new System.Drawing.Point(230, 224);
-            this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(183, 35);
-            this.txt_email.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.txt_email.StateCommon.Border.Color1 = System.Drawing.SystemColors.InactiveCaption;
-            this.txt_email.StateCommon.Border.Color2 = System.Drawing.SystemColors.ActiveCaption;
-            this.txt_email.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txt_email.StateCommon.Border.Rounding = 10;
-            this.txt_email.StateCommon.Border.Width = 1;
-            this.txt_email.StateCommon.Content.Color1 = System.Drawing.SystemColors.InfoText;
-            this.txt_email.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_email.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 2);
-            this.txt_email.TabIndex = 21;
-            // 
-            // txt_username
-            // 
-            this.txt_username.Location = new System.Drawing.Point(23, 224);
-            this.txt_username.Name = "txt_username";
-            this.txt_username.Size = new System.Drawing.Size(183, 35);
-            this.txt_username.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.txt_username.StateCommon.Border.Color1 = System.Drawing.SystemColors.InactiveCaption;
-            this.txt_username.StateCommon.Border.Color2 = System.Drawing.SystemColors.ActiveCaption;
-            this.txt_username.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txt_username.StateCommon.Border.Rounding = 10;
-            this.txt_username.StateCommon.Border.Width = 1;
-            this.txt_username.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_username.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 2);
-            this.txt_username.TabIndex = 24;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(19, 198);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(101, 23);
-            this.label10.TabIndex = 23;
-            this.label10.Text = "Харагдах нэр";
-            // 
-            // label11
-            // 
-            this.label11.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.DimGray;
-            this.label11.Location = new System.Drawing.Point(78, 57);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(299, 50);
-            this.label11.TabIndex = 25;
-            this.label11.Text = "Бүртгүүлсний дараа утасны дугаар болон нууц үгээр нэвтрэхийг анхаарна уу!";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(839, 518);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(8, 11);
+            this.label12.TabIndex = 12;
+            this.label12.Text = "2";
             // 
             // SignUp
             // 
@@ -458,6 +468,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(859, 529);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.pictureBox1);
@@ -472,12 +483,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Нэвтрэх";
             this.Load += new System.EventHandler(this.Login_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -510,5 +521,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txt_lastName;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }

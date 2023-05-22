@@ -48,7 +48,8 @@ namespace swe_biydaalt.UserControls
             txt_firstName.Text = ds.Tables[0].Rows[0]["Firstname"].ToString();
             txt_lastName.Text = ds.Tables[0].Rows[0]["LastName"].ToString();
             txt_phone.Text = ds.Tables[0].Rows[0]["Phone"].ToString();
-            txt_email.Text = ds.Tables[0].Rows[0]["Email"].ToString();   
+            txt_email.Text = ds.Tables[0].Rows[0]["Email"].ToString();
+            txt_userName.Text = ds.Tables[0].Rows[0]["Username"].ToString();
             con.Close();
         }
 
@@ -60,7 +61,7 @@ namespace swe_biydaalt.UserControls
             con.Open();
             try
             {
-                string query = "UPDATE Users SET FirstName = '" + txt_firstName.Text + "', LastName ='" + txt_lastName.Text + "', Phone = '" + txt_phone.Text + "', Email = '" + txt_email.Text + "' WHERE UserID = '" + user_id + "'";
+                string query = "UPDATE Users SET FirstName = '" + txt_firstName.Text + "', UserName ='" + txt_userName.Text + "', LastName ='" + txt_lastName.Text + "', Phone = '" + txt_phone.Text + "', Email = '" + txt_email.Text + "' WHERE UserID = '" + user_id + "'";
                 SqlCommand com = new SqlCommand(query, con);
                 SqlCommand com1 = new SqlCommand();
                 com1.Connection = con;

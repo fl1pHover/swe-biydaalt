@@ -63,7 +63,7 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.BackColor = System.Drawing.Color.White;
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -75,6 +75,7 @@
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.Padding = new System.Windows.Forms.Padding(15);
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -83,19 +84,20 @@
             // 
             // tableLayoutPanel5
             // 
+            this.tableLayoutPanel5.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel5.ColumnCount = 1;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.Controls.Add(this.txt_countUsers, 0, 2);
             this.tableLayoutPanel5.Controls.Add(this.label6, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.pictureBox4, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(4, 261);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(19, 261);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 3;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 85F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(432, 250);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(417, 235);
             this.tableLayoutPanel5.TabIndex = 8;
             // 
             // txt_countUsers
@@ -104,9 +106,9 @@
             this.txt_countUsers.AutoSize = true;
             this.txt_countUsers.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_countUsers.ForeColor = System.Drawing.Color.Black;
-            this.txt_countUsers.Location = new System.Drawing.Point(3, 186);
+            this.txt_countUsers.Location = new System.Drawing.Point(3, 171);
             this.txt_countUsers.Name = "txt_countUsers";
-            this.txt_countUsers.Size = new System.Drawing.Size(426, 42);
+            this.txt_countUsers.Size = new System.Drawing.Size(411, 42);
             this.txt_countUsers.TabIndex = 5;
             this.txt_countUsers.Text = "212";
             this.txt_countUsers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -117,9 +119,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(117)))), ((int)(((byte)(123)))));
-            this.label6.Location = new System.Drawing.Point(3, 135);
+            this.label6.Location = new System.Drawing.Point(3, 122);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(426, 26);
+            this.label6.Size = new System.Drawing.Size(411, 26);
             this.label6.TabIndex = 1;
             this.label6.Text = "Нийт бүртгэлтэй хэрэглэгчид";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -130,13 +132,14 @@
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(3, 3);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(426, 126);
+            this.pictureBox4.Size = new System.Drawing.Size(411, 114);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox4.TabIndex = 6;
             this.pictureBox4.TabStop = false;
             // 
             // tableLayoutPanel4
             // 
+            this.tableLayoutPanel4.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.Controls.Add(this.label2, 0, 2);
@@ -149,7 +152,7 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 85F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(433, 250);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(418, 235);
             this.tableLayoutPanel4.TabIndex = 7;
             // 
             // label2
@@ -158,9 +161,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(3, 186);
+            this.label2.Location = new System.Drawing.Point(3, 171);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(427, 42);
+            this.label2.Size = new System.Drawing.Size(412, 42);
             this.label2.TabIndex = 5;
             this.label2.Text = "0.0";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -171,9 +174,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(117)))), ((int)(((byte)(123)))));
-            this.label3.Location = new System.Drawing.Point(3, 135);
+            this.label3.Location = new System.Drawing.Point(3, 122);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(427, 26);
+            this.label3.Size = new System.Drawing.Size(412, 26);
             this.label3.TabIndex = 1;
             this.label3.Text = "Дундаж үнэлгээ";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -184,7 +187,7 @@
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(3, 3);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(427, 126);
+            this.pictureBox3.Size = new System.Drawing.Size(412, 114);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
@@ -193,13 +196,14 @@
             // 
             this.panel4.Controls.Add(this.tableLayoutPanel3);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(443, 4);
+            this.panel4.Location = new System.Drawing.Point(443, 19);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(433, 250);
+            this.panel4.Size = new System.Drawing.Size(418, 235);
             this.panel4.TabIndex = 1;
             // 
             // tableLayoutPanel3
             // 
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Controls.Add(this.txt_countComplaint, 0, 2);
@@ -212,7 +216,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 85F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(433, 250);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(418, 235);
             this.tableLayoutPanel3.TabIndex = 7;
             // 
             // txt_countComplaint
@@ -221,9 +225,9 @@
             this.txt_countComplaint.AutoSize = true;
             this.txt_countComplaint.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_countComplaint.ForeColor = System.Drawing.Color.Black;
-            this.txt_countComplaint.Location = new System.Drawing.Point(3, 186);
+            this.txt_countComplaint.Location = new System.Drawing.Point(3, 171);
             this.txt_countComplaint.Name = "txt_countComplaint";
-            this.txt_countComplaint.Size = new System.Drawing.Size(427, 42);
+            this.txt_countComplaint.Size = new System.Drawing.Size(412, 42);
             this.txt_countComplaint.TabIndex = 5;
             this.txt_countComplaint.Text = "212";
             this.txt_countComplaint.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -234,20 +238,21 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(117)))), ((int)(((byte)(123)))));
-            this.label5.Location = new System.Drawing.Point(3, 135);
+            this.label5.Location = new System.Drawing.Point(3, 122);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(427, 26);
+            this.label5.Size = new System.Drawing.Size(412, 26);
             this.label5.TabIndex = 1;
             this.label5.Text = "Нийт гомдол";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(3, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(427, 126);
+            this.pictureBox2.Size = new System.Drawing.Size(412, 114);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
@@ -258,13 +263,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.Controls.Add(this.tableLayoutPanel1);
-            this.panel3.Location = new System.Drawing.Point(4, 4);
+            this.panel3.Location = new System.Drawing.Point(19, 19);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(432, 250);
+            this.panel3.Size = new System.Drawing.Size(417, 235);
             this.panel3.TabIndex = 0;
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.txt_countFeedback, 0, 2);
@@ -277,7 +283,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 85F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(432, 250);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(417, 235);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
             // txt_countFeedback
@@ -287,9 +293,9 @@
             this.txt_countFeedback.AutoSize = true;
             this.txt_countFeedback.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_countFeedback.ForeColor = System.Drawing.Color.Black;
-            this.txt_countFeedback.Location = new System.Drawing.Point(3, 165);
+            this.txt_countFeedback.Location = new System.Drawing.Point(3, 150);
             this.txt_countFeedback.Name = "txt_countFeedback";
-            this.txt_countFeedback.Size = new System.Drawing.Size(426, 42);
+            this.txt_countFeedback.Size = new System.Drawing.Size(411, 42);
             this.txt_countFeedback.TabIndex = 5;
             this.txt_countFeedback.Text = "212";
             this.txt_countFeedback.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -300,9 +306,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(117)))), ((int)(((byte)(123)))));
-            this.label1.Location = new System.Drawing.Point(3, 135);
+            this.label1.Location = new System.Drawing.Point(3, 122);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(426, 26);
+            this.label1.Size = new System.Drawing.Size(411, 26);
             this.label1.TabIndex = 1;
             this.label1.Text = "Нийт санал";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -313,7 +319,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(426, 126);
+            this.pictureBox1.Size = new System.Drawing.Size(411, 114);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;

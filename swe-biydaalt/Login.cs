@@ -24,6 +24,7 @@ namespace swe_biydaalt
         {
             lbl_error.Visible = false;
             txt_password.UseSystemPasswordChar = true;
+            get_data();
         }
 
         public void get_data()
@@ -42,6 +43,7 @@ namespace swe_biydaalt
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
+
             try
             {
                 //  String query = "SELECT * FROM Users WHERE Phone = '" + txt_phone.Text + "' AND Password = '" + "'";

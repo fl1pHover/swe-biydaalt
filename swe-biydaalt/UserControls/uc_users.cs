@@ -15,7 +15,7 @@ namespace swe_biydaalt.UserControls
 {
     public partial class uc_users : UserControl
     {
-
+        public int user_id;
         public int selected_user;
         public uc_users()
         {
@@ -48,8 +48,8 @@ namespace swe_biydaalt.UserControls
             if (kryptonDataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
             {
                 kryptonDataGridView1.CurrentRow.Selected = true;
-                selected_user = int.Parse(kryptonDataGridView1.SelectedCells[0].FormattedValue.ToString());
-                label1.Text = selected_user.ToString();
+                user_id = int.Parse(kryptonDataGridView1.SelectedCells[0].FormattedValue.ToString());
+                label1.Text = user_id.ToString();
             }
         }
 
@@ -65,20 +65,22 @@ namespace swe_biydaalt.UserControls
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+           
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
             SqlConnection con = new SqlConnection(Globals.database);
             con.Open();
-            SqlCommand cmd = new SqlCommand("del_Users", con);
+            SqlCommand cmd = new SqlCommand("del_users", con);
             cmd.CommandType = CommandType.StoredProcedure;
             SqlParameter[] param = new SqlParameter[1];
 
-            param[0] = new SqlParameter("@uid", selected_user);
+            param[0] = new SqlParameter("@user_id", user_id);
             cmd.Parameters.Add(param[0]);
-
-
-
-
             string mes = "Та итгэлтэй байна уу?";
             string title = "Warning";
+
             MessageBoxButtons buttons = MessageBoxButtons.YesNo;
             DialogResult result = MessageBox.Show(mes, title, buttons);
 

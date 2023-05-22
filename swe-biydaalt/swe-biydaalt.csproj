@@ -68,6 +68,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_solution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_solution.Designer.cs">
+      <DependentUpon>frm_solution.cs</DependentUpon>
+    </Compile>
     <Compile Include="Globals.cs" />
     <Compile Include="mod\Mod_solution.cs">
       <SubType>Form</SubType>
@@ -145,6 +151,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_solution.resx">
+      <DependentUpon>frm_solution.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mod\Mod_solution.resx">
       <DependentUpon>Mod_solution.cs</DependentUpon>
